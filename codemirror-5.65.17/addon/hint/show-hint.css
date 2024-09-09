@@ -41,7 +41,10 @@ li.CodeMirror-hint-active {
 .night .CodeMirror-hints {
   background: #4a4a4a;
   border-color: #5f5f5f;
-  color: #ffffff;
+}
+
+.night .CodeMirror-hint {
+  color: white;
 }
 
 .night li.CodeMirror-hint-active {
