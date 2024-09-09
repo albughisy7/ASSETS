@@ -35,3 +35,15 @@ li.CodeMirror-hint-active {
   background: #08f;
   color: white;
 }
+
+
+/* START EDIT */
+.night .CodeMirror-hints {
+  background: #4a4a4a;
+  border-color: #5f5f5f;
+}
+
+.night li.CodeMirror-hint-active {
+  background: #616161;
+}
+/* START EDIT */
