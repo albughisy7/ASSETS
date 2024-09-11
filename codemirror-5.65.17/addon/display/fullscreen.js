@@ -18,7 +18,10 @@
     else setNormal(cm);
   });
 
+  var myFooter = document.getElementById("myFooter");
+
   function setFullscreen(cm) {
+    myFooter.style.zIndex = "-1";
     var wrap = cm.getWrapperElement();
     cm.state.fullScreenRestore = {scrollTop: window.pageYOffset, scrollLeft: window.pageXOffset,
                                   width: wrap.style.width, height: wrap.style.height};
@@ -30,6 +33,7 @@
   }
 
   function setNormal(cm) {
+    myFooter.style.zIndex = "2";
     var wrap = cm.getWrapperElement();
     wrap.className = wrap.className.replace(/\s*CodeMirror-fullscreen\b/, "");
     document.documentElement.style.overflow = "";
