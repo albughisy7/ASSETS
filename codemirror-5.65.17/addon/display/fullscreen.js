@@ -41,7 +41,8 @@ var myFooter_style = document.getElementById('myFooter');
     wrap.style.width = info.width; wrap.style.height = info.height;
     window.scrollTo(info.scrollLeft, info.scrollTop);
     cm.refresh();
+
+    myFooter_style.style.zIndex = "2";
   }
 
-  myFooter_style.style.zIndex = "2";
 });
