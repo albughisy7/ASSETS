@@ -1,8 +1,6 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/5/LICENSE
 
-var myFooter_style = document.getElementById('myFooter');
-
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
     mod(require("../../lib/codemirror"));
@@ -29,8 +27,6 @@ var myFooter_style = document.getElementById('myFooter');
     wrap.className += " CodeMirror-fullscreen";
     document.documentElement.style.overflow = "hidden";
     cm.refresh();
-
-    myFooter_style.style.zIndex = "-1";
   }
 
   function setNormal(cm) {
@@ -41,8 +37,6 @@ var myFooter_style = document.getElementById('myFooter');
     wrap.style.width = info.width; wrap.style.height = info.height;
     window.scrollTo(info.scrollLeft, info.scrollTop);
     cm.refresh();
-
-    myFooter_style.style.zIndex = "2";
   }
 
 });
